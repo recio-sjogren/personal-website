@@ -1,5 +1,5 @@
 ---
-name: Manolo Recio
+name: Manolo Recio Sjögren
 avatar: /static/images/avatar.png
 occupation: Professor of Atmospheric Science
 company: Stanford University
