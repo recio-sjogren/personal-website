@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
+  title: "Hi! I'm Manolo 👋",
   author: 'Manolo Recio Sjogren',
   headerTitle: 'Manolo Recio Sjogren',
   description: "I'm a designer and technologist writing (and talking) about tech",
