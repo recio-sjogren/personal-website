@@ -1,6 +1,6 @@
 ---
 name: Manolo Recio Sjögren
-avatar: /static/images/profile-sm.jpg
+avatar: /static/images/profile-square.jpg
 occupation: Professor of Atmospheric Science
 company: Stanford University
 email: address@yoursite.com
@@ -9,8 +9,6 @@ linkedin: https://www.linkedin.com
 github: https://github.com
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. In ut quam vitae odio lacinia tincidunt. Ut varius tincidunt libero.
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. In ut quam vitae odio lacinia tincidunt. Ut varius tincidunt libero.
