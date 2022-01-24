@@ -1,6 +1,6 @@
 # Read me
 
-![Manolo Recio Sjögren](/static/images/profile.png)
+![Manolo Recio Sjögren](/static/images/canada/toronto.jpg)
 
 Hey there 👋
 
