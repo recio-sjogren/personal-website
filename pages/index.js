@@ -82,11 +82,42 @@ export default function Home({ posts }) {
           </Link>
         </div>
       )}
-      {siteMetadata.newsletter.provider !== '' && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
-        </div>
-      )}
+      <div id="revue-embed">
+        <form
+          action="https://www.getrevue.co/profile/recio_sjogren/add_subscriber"
+          method="post"
+          id="revue-form"
+          name="revue-form"
+          target="_blank"
+        >
+          <div className="flex justify-center">
+            <div>
+              <div className="pb-1 text-lg font-semibold text-gray-800 dark:text-gray-100">
+                Subscribe to the newslettery
+              </div>
+              <label className="sr-only" htmlFor="member_email">
+                Email address
+              </label>
+              <div className="flex">
+                <input
+                  className="px-4 rounded-md w-72 dark:bg-black focus:outline-none focus:ring-2 focus:border-transparent focus:ring-primary-600"
+                  placeholder="Enter your email"
+                  type="email"
+                  name="member[email]"
+                  id="member_email"
+                />
+                <input
+                  type="submit"
+                  className="py-2 bg-primary-500 px-4 rounded-md font-medium text-white flex mt-2 shadow-sm sm:mt-0 sm:ml-3"
+                  value="Sign up"
+                  name="member[subscribe]"
+                  id="member_submit"
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </>
   )
 }
