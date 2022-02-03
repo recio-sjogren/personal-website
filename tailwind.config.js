@@ -25,21 +25,21 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.gray.700'),
+            color: theme('colors.gray.900'),
             a: {
-              color: theme('colors.primary.500'),
+              color: theme('colors.gray.900'),
               '&:hover': {
-                color: theme('colors.primary.600'),
+                color: theme('colors.primary.900'),
               },
               code: { color: theme('colors.primary.400') },
             },
             h1: {
-              fontWeight: '700',
+              fontWeight: '900',
               letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.900'),
             },
             h2: {
-              fontWeight: '700',
+              fontWeight: '900',
               letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.900'),
             },
@@ -77,17 +77,20 @@ module.exports = {
               borderRadius: '0.25rem',
             },
             hr: { borderColor: theme('colors.gray.200') },
+            ol: { fontWeight: 'normal' },
             'ol li::marker': {
-              fontWeight: '600',
-              color: theme('colors.gray.500'),
+              color: theme('colors.gray.900'),
             },
             'ul li::marker': {
-              backgroundColor: theme('colors.gray.500'),
+              backgroundColor: theme('colors.gray.900'),
             },
-            strong: { color: theme('colors.gray.600') },
+            strong: {
+              color: theme('colors.gray.900'),
+              fontWeight: '700',
+            },
             blockquote: {
               color: theme('colors.gray.900'),
-              borderLeftColor: theme('colors.gray.200'),
+              borderLeftColor: theme('colors.gray.900'),
             },
           },
         },

@@ -37,7 +37,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <dl className="space-y-16">
                 <div>
                   <dt className="sr-only">Published by</dt>
-                  <dd className="text-base font-medium leading-6 text-gray-300 dark:text-gray-300">
+                  <dd className="text-lg leading-6 text-gray-500 dark:text-gray-300">
                     <time dateTime={date}>
                       {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                     </time>

@@ -1,11 +1,19 @@
 ---
 title: 'Would you fix your own bike?'
-date: '2021-01-24'
+date: '2021-03-28'
 tags: []
 summary: 'For my first technology post, I have decided to write about a book about philosophy. Hang in there with me. I am reading Zen and the Art of Motorcycle Maintenance by the great Robert M. Pirsig.'
 ---
 
-![Zen and the art of motorcycle maintenance](/static/images/motorcycle.jpg)
+_👋 Hello and welcome to my newsletter. My name is Manolo Recio Sjogren and I am an independent product designer and technologist living in sunny London._
+
+_🚀 I work with startups and engineering teams that are either bringing new products to market or refining existing products._
+
+_🛠 I love building stuff and will be using this newsletter to share first-hand learnings and thoughts back to the community._
+
+---
+
+![Zen and the art of motorcycle maintenance](/static/images/motorcycle.png)
 
 For my first technology post, I have decided to write about a book about philosophy. Hang in there with me. I am reading [Zen and the Art of Motorcycle Maintenance](https://www.wikiwand.com/en/Zen_and_the_Art_of_Motorcycle_Maintenance) by the great Robert M. Pirsig.
 
@@ -29,5 +37,5 @@ Thankfully, the two mindsets described by the book are merely extremes from a sp
 
 Once we leave any preconceived images of ourselves behind, we can blend curiosity creativity and intuition with reason and science as sources of wisdom to increase our quality of life.
 
-Thanks for reading,
+Thanks for reading,  
 [Manolo](https://twitter.com/recio_sjogren)
