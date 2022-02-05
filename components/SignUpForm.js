@@ -1,8 +1,8 @@
-export default function PageTitle({ children }) {
+export default function SignUpForm() {
   return (
-    <div id="revue-embed">
+    <div id="revue-embed" className="pt-8">
       <form
-        action="https://www.getrevue.co/profile/manolo-recio-sjogren/add_subscriber"
+        action="https://www.getrevue.co/profile/recio_sjogren/add_subscriber"
         method="post"
         id="revue-form"
         name="revue-form"
@@ -13,7 +13,7 @@ export default function PageTitle({ children }) {
             Subscribe to my newsletter
           </div>
           <p className="text-base text-gray-800 dark:text-gray-300">
-            Get emails from me about web development, tech, and early access to new articles.
+            Stay updated receive my latests posts straight to your inbox.
           </p>
           <label className="sr-only" htmlFor="member_email">
             Email address

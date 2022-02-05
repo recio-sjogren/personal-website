@@ -1,11 +1,11 @@
 import Link from '@/components/Link'
-import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import { BlogSEO } from '@/components/SEO'
 import Image from '@/components/Image'
 import siteMetadata from '@/data/siteMetadata'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
+import SignUpForm from '@/components/SignUpForm'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
@@ -13,7 +13,7 @@ const discussUrl = (slug) =>
     `${siteMetadata.siteUrl}/blog/${slug}`
   )}`
 
-const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' } // I removed (weekday: 'long',)
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { slug, fileName, date, title, tags } = frontMatter
@@ -25,24 +25,23 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
         authorDetails={authorDetails}
         {...frontMatter}
       />
-      <ScrollTopAndComment />
+      {/* <ScrollTopAndComment /> */}
       <article>
         <div className="">
-          {/* HEADER AND METADATA */}
-          <header className="pt-6 xl:pb-6">
-            <div className="space-y-1 text-left text-indigo-500">
-              <div>
-                <PageTitle>{title}</PageTitle>
-              </div>
-              <dl className="space-y-16">
-                <div>
-                  <dt className="sr-only">Published by</dt>
-                  <dd className="text-lg leading-6 text-gray-500 dark:text-gray-300">
-                    <time dateTime={date}>
-                      {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
-                    </time>
-                  </dd>
-                </div>
+          <header className="pt-6">
+            <div className="space-y-2 text-left">
+              {/* H1 */}
+              <h1 className="text-4xl font-extrabold text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+                {title}
+              </h1>
+              {/* time */}
+              <dl>
+                <dt className="sr-only">Published by</dt>
+                <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                  <time dateTime={date}>
+                    {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+                  </time>
+                </dd>
               </dl>
             </div>
           </header>
@@ -50,9 +49,12 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             className="pb-8 divide-y divide-gray-200 xl:divide-y-0 dark:divide-gray-700"
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
-            <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
-              <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
+            <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0">
+              <div className="pt-10 pb-8 prose prose-img:rounded-xl prose-p:font-medium dark:prose-dark max-w-none">
+                {children}
+              </div>
             </div>
+            <SignUpForm />
             <footer>
               {/* <div className="text-sm font-medium leading-5 divide-gray-200 xl:divide-y dark:divide-gray-700 xl:col-start-1 xl:row-start-2">
                 {(next || prev) && (

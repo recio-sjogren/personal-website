@@ -7,9 +7,7 @@ summary: 'For my first technology post, I have decided to write about a book abo
 
 ![leassons learned hero image](/static/images/lessons-title.png)
 
-There is a lot of uncertainty when building something new.
-
-After setting on a problem to solve and a set of users to serve, some questions will pop up:
+There is a lot of uncertainty when building something new. After setting on a problem to solve and a set of users to serve, some questions will pop up:
 
 - Is this actually _a real problem_ for my users?
 - Would they care about my solution?

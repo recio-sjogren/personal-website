@@ -1,5 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
+const { fontWeight } = require('tailwindcss/defaultTheme')
 
 module.exports = {
   content: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js', './lib/**/*.js'],
@@ -9,25 +10,25 @@ module.exports = {
       spacing: {
         '9/16': '56.25%',
       },
-      lineHeight: {
-        11: '2.75rem',
-        12: '3rem',
-        13: '3.25rem',
-        14: '3.5rem',
-      },
+      // lineHeight: {
+      //   11: '2.75rem',
+      //   12: '3rem',
+      //   13: '3.25rem',
+      //   14: '3.5rem',
+      // },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        primary: colors.cyan,
+        primary: colors.yellow,
         gray: colors.neutral,
       },
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.gray.900'),
+            color: theme('colors.slate.900'),
             a: {
-              color: theme('colors.gray.900'),
+              color: theme('colors.primary.900'),
               '&:hover': {
                 color: theme('colors.primary.900'),
               },
@@ -96,8 +97,9 @@ module.exports = {
         },
         dark: {
           css: {
-            color: theme('colors.gray.300'),
+            color: theme('colors.gray.200'),
             a: {
+              fontWeight: '600',
               color: theme('colors.primary.500'),
               '&:hover': {
                 color: theme('colors.primary.400'),
@@ -107,11 +109,11 @@ module.exports = {
             h1: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
-              color: theme('colors.gray.100'),
+              color: theme('colors.white'),
             },
             h2: {
               fontWeight: '700',
-              letterSpacing: theme('letterSpacing.tight'),
+              // letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.100'),
             },
             h3: {
@@ -149,7 +151,7 @@ module.exports = {
             },
             blockquote: {
               color: theme('colors.gray.100'),
-              borderLeftColor: theme('colors.gray.700'),
+              borderLeftColor: theme('colors.gray.200'),
             },
           },
         },

@@ -1,7 +1,7 @@
 ---
 name: Manolo Recio Sjögren
 avatar: /static/images/profile-square.jpg
-occupation: Professor of Atmospheric Science
+occupation: Occupation from FrontMatter
 company: Stanford University
 email: address@yoursite.com
 twitter: https://twitter.com/Twitter

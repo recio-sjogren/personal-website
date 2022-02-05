@@ -41,3 +41,5 @@ Thanks for reading,
 [Manolo](https://twitter.com/recio_sjogren)
 
 Ps. I have gone old-school to track progress. Hoping to see lots of black dots at the end of each month 👇
+
+![Schedule](/static/images/schedule.jpeg)
