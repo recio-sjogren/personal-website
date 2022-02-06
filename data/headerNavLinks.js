@@ -1,7 +1,7 @@
 const headerNavLinks = [
   { href: '/', title: 'Home' },
   { href: '/blog', title: 'Blog' },
-  // { href: '/tags', title: 'Tags' },
+  { href: 'https://twitter.com/recio_sjogren', title: 'Follow me' },
   // { href: '/projects', title: 'Projects' },
   // { href: '/about', title: 'About' },
 ]
