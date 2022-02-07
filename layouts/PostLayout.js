@@ -28,16 +28,17 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
       {/* <ScrollTopAndComment /> */}
       <article>
         <div className="">
-          <header className="pt-6">
+          {/* HEADER */}
+          <header className="sm:pt-6">
             <div className="space-y-2 text-left">
               {/* H1 */}
-              <h1 className="text-4xl font-extrabold text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+              <h1 className="text-4xl font-extrabold text-slate-900 dark:text-slate-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
                 {title}
               </h1>
               {/* time */}
               <dl>
                 <dt className="sr-only">Published by</dt>
-                <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                <dd className="text-base font-bold leading-6 text-slate-500 dark:text-slate-600">
                   <time dateTime={date}>
                     {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                   </time>
@@ -46,22 +47,22 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             </div>
           </header>
           <div
-            className="pb-8 divide-y divide-gray-200 xl:divide-y-0 dark:divide-gray-700"
+            className="pb-8 divide-y divide-slate-200 xl:divide-y-0 dark:divide-slate-700"
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
-            <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0">
-              <div className="pt-10 pb-8 prose prose-img:rounded-xl prose-p:font-medium dark:prose-dark max-w-none">
+            <div className="divide-y divide-slate-200 dark:divide-slate-700 xl:pb-0">
+              <div className="pt-10 pb-8 prose prose-h2:text-3xl prose-h3:text-xl prose-img:rounded-xl dark:prose-dark max-w-none">
                 {children}
               </div>
             </div>
             <SignUpForm />
             <footer>
-              {/* <div className="text-sm font-medium leading-5 divide-gray-200 xl:divide-y dark:divide-gray-700 xl:col-start-1 xl:row-start-2">
+              {/* <div className="text-sm font-medium leading-5 divide-slate-200 xl:divide-y dark:divide-slate-700 xl:col-start-1 xl:row-start-2">
                 {(next || prev) && (
                   <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
                     {prev && (
                       <div>
-                        <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
+                        <h2 className="text-xs tracking-wide text-slate-500 uppercase dark:text-slate-400">
                           Previous Article
                         </h2>
                         <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
@@ -71,7 +72,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                     )}
                     {next && (
                       <div>
-                        <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
+                        <h2 className="text-xs tracking-wide text-slate-500 uppercase dark:text-slate-400">
                           Next Article
                         </h2>
                         <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">

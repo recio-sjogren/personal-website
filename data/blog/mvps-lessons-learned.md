@@ -2,45 +2,31 @@
 title: 'Lessons learned on building MVPs'
 date: '2021-04-21'
 tags: []
-summary: 'For my first technology post, I have decided to write about a book about philosophy. Hang in there with me. I am reading Zen and the Art of Motorcycle Maintenance by the great Robert M. Pirsig.'
+summary: 'Round up of lessons that I have learned the hard way when designing and building Minumum Viable Products.'
 ---
 
 ![leassons learned hero image](/static/images/lessons-title.png)
 
-There is a lot of uncertainty when building something new. After setting on a problem to solve and a set of users to serve, some questions will pop up:
+There is a lot of uncertainty when building something new. To start with you will need to choose a specific problem to solve and group of users to serve. Then, questions like these will pop up: _**Is this a real problem** for my set of users? **Would they care** about my solution? Even better, **would they pay** to have it solved by my software solution?_
 
-- Is this actually _a real problem_ for my users?
-- Would they care about my solution?
-- Even better, would they pay or subscribe to it?
+Just to add some context, [the rate of startup failure in 2019 was around 90%](https://www.investopedia.com/articles/personal-finance/040915/how-many-startups-fail-and-why.asp?utm_campaign=Weekly%20updates%20%E2%9A%A1%EF%B8%8F&utm_medium=email&utm_source=Revue%20newsletter). Even though the majority of these startups are made out of pretty smart people, the risk of not finding sustainable demand for new products seems to be incredibly high.
 
-Just to give you an idea, [the rate of startup failure in 2019 was around 90%](https://www.investopedia.com/articles/personal-finance/040915/how-many-startups-fail-and-why.asp?utm_campaign=Weekly%20updates%20%E2%9A%A1%EF%B8%8F&utm_medium=email&utm_source=Revue%20newsletter). These startups employ pretty smart people but still, the risk of not finding sustainable demand for new products in incredibly high.
+A common startup advice to mitigate the risk of building something that nobody wants is to create a Minimum Viable Product (MVP) to validate any initial assumptions.
 
-I have experienced this myself a couple of times. Different teams, different products, different timescales but similar outcomes.
+Having built several MVPs with varying degrees of success over the years, below you'll find a list of lessons that I have learned:
 
-A way to mitigate risks and avoid wasting time and resources building something that nobody wants is by creating an MVP (minimum viable product).
-
-> In plain language, an MVP is the minimum amount of work that you need to do to see whether you can deliver any value at all to your first set of users.
-
-## 📖 Lessons that I have learned the hard way
-
-While I don’t have all the answers, I have built many Minimum Viable Products over the years with varying degrees of success. You will find below a consolidated list of lessons that I have learned the hard way:
-
-1. **First, talk to users.**
+1. **First, talk to your users.**
 2. **Appeal to a small set of users.**
 3. **Do one thing well. Ignore the rest.**
 4. **Launch quickly.**
 5. **Get some initial customers.**
 6. **Finally, iterate.**
 
----
-
-## 1. First, talk to users
-
-![Talk to users](/static/images/talk-to-users.png)
+## 👂 First, talk to your users
 
 Let’s pretend that you have identified a problem that some users experience and would like to adress it with software.
 
-This initial stage will fill you with enthusiasm. You will quickly generate a vision and would be eager to start working on it.
+This initial stage will fill you with enthusiasm as you'll be able to generate a vision and would be eager to start working on it.
 
 **Before you start building the product, it is helpful if you talk to your users.** Literally. Go and talk to them.
 
@@ -48,13 +34,9 @@ Engage with them. Actually, get to know them and offer your help with anything. 
 
 ## Appeal to a small set of users
 
-Oh, this is a biggie.
+Oh, this is a biggie. You might think that by building a generic product that addresses the needs of several user groups you might increase your odds of success.
 
-To increase the odds of people wanting your product you might decide to build a product that addresses several problems for relatively generic users.
-
-Please don’t. You can’t please everyone.
-
-It will take you a long time to get there and by the time you do, you will probably have lots of half-baked features with relatively poor adoption.
+**Please don’t. You can’t please everyone.** Having a well-defined set of users needs is like a compass that will help you to hopefully build the most pressing features for your target users. Generic MVPs result in lots of half-baked features with relatively poor adoption.
 
 Instead, **focus on a specific set of users**. Go niche. Find out where they hang out and get to know them as much as you can about them.
 
@@ -68,15 +50,11 @@ This will help you build a small solution that will be laser focus. If you build
 
 ## Launch quickly
 
-Very important.
+I'd argue that this is one of the most important points once you are set on a specific problem space. For your initial MVP, choose something that you can build in weeks, not months.
 
-For your initial MVP, choose something that you can build in weeks, not months.
+Sprinting to put something in front of your users so you can learn from their reactions should be your main goal.
 
-**Sprinting to put something in front of your users so you can learn from their reactions should be your main goal.**
-
-The first version of your product will probably be off anyways.
-
-Measuring their early reactions (analytics plus good old conversations) will help you understand whether you are on the right track.
+The first version of your product will probably be quite off anyways. What you want to do at this stage is measuring their early reactions (analytics plus good old conversations) will help you understand whether you are on the right track.
 
 ## Get some initial customers
 
@@ -109,9 +87,9 @@ While the main tendency will be to wait until the product feels right, I would e
 
 The process might seem painful at first but you will get the facts before it’s too late. The insight generated from your early adopters will help you improve on your solution until it hopefully gets traction and solves the problem.
 
-Thanks for reading,
-
-Manolo
+Thanks for reading,  
+Manolo  
+[@recio_sjogren](https://twitter.com/recio_sjogren)
 
 ---
 

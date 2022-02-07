@@ -9,26 +9,26 @@ export default function SignUpForm() {
         target="_blank"
       >
         <div className="bg-white dark:bg-yellow-900/10 rounded-lg p-8 space-y-4 border border-yellow-900/50">
-          <div className="text-xl font-bold text-gray-800 dark:text-gray-100">
+          <div className="text-xl font-extrabold text-slate-800 dark:text-slate-100">
             Subscribe to my newsletter
           </div>
-          <p className="text-base text-gray-800 dark:text-gray-300">
+          <p className="text-base text-slate-800 dark:text-slate-300">
             Stay updated receive my latests posts straight to your inbox.
           </p>
           <label className="sr-only" htmlFor="member_email">
             Email address
           </label>
-          <div className="flex">
+          <div className="space-y-5 sm:space-y-0 sm:flex ">
             <input
-              className="px-4 flex-auto rounded-md dark:bg-black focus:outline-none focus:ring-2 focus:border-transparent focus:ring-yellow-600"
+              className="px-4 w-full sm:flex-auto rounded-md dark:bg-black focus:outline-none focus:ring-2 focus:border-transparent focus:ring-yellow-600"
               placeholder="your@email.com"
               type="email"
               name="member[email]"
               id="member_email"
             />
             <input
+              className="py-2  bg-yellow-500 px-6 rounded-md font-medium text-white mt-2 shadow-sm sm:mt-0 sm:ml-3"
               type="submit"
-              className="py-2 bg-yellow-500 px-4 rounded-md font-medium text-white flex mt-2 shadow-sm sm:mt-0 sm:ml-3"
               value="Subscribe"
               name="member[subscribe]"
               id="member_submit"

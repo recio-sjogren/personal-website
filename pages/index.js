@@ -23,10 +23,17 @@ export default function Home({ posts }) {
 
         <div className="grid grid-cols-4 py-14">
           <div className="space-y-4 col-span-3">
-            <h1 className="text-5xl font-extrabold text-gray-900 dark:text-gray-100 sm:leading-10 md:leading-14">
-              Hi, I'm Manolo 👋
+            <h1 className="text-5xl font-bold text-slate-900 dark:text-slate-100 sm:leading-10">
+              Hi,{' '}
+              <a
+                href="https://twitter.com/recio_sjogren"
+                className="underline font-extrabold underline-offset-4 decoration-primary-400/75 hover:decoration-primary-400 decoration-2"
+              >
+                I'm Manolo
+              </a>{' '}
+              👋
             </h1>
-            <p className="text-xl text-gray-800 dark:text-gray-200">
+            <p className="hidden sm:block text-xl text-slate-700 dark:text-slate-300">
               I am a maker and an independent product design consultant writing about how to bring
               successful products to market.
             </p>
@@ -41,8 +48,14 @@ export default function Home({ posts }) {
             />
           </div>
         </div>
+        <div>
+          <p className="sm:hidden text-lg dark:text-slate-200 text-slate-700">
+            I am a maker and an independent product design consultant writing about how to bring
+            successful products to market.
+          </p>
+        </div>
 
-        <h2 className="text-3xl font-bold py-2">Featured Posts</h2>
+        <h2 className="text-slate-900 text-3xl font-extrabold py-2">Featured Posts</h2>
         <ul className="">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
@@ -54,28 +67,28 @@ export default function Home({ posts }) {
               >
                 <Link
                   href={`/blog/${slug}`}
-                  className="text-gray-900 block py-7 px-6 dark:text-gray-100"
+                  className="text-slate-900 block py-7 px-6 dark:text-slate-100"
                 >
                   <article>
                     <div className="space-y-2">
                       <div className="">
                         {/* Title */}
-                        <h2 className="text-xl font-bold">{title}</h2>
+                        <h2 className="text-xl font-extrabold">{title}</h2>
                         {/* Published on */}
                         <dl>
                           <dt className="sr-only">Published on</dt>
-                          <dd className="mb-3 text-gray-700 dark:text-gray-400">
+                          <dd className="mb-3 text-sm dark:text-slate-500 text-slate-700">
                             <time dateTime={date}>{formatDate(date)}</time>
                           </dd>
                         </dl>
-                        <div className="mb-3 text-gray-700 max-w-none dark:text-gray-400">
+                        <div className="mb-3 dark:text-slate-300 text-slate-700 max-w-none">
                           {summary}
                         </div>
                       </div>
-                      <div className="font-medium">
+                      <div className="">
                         <Link
                           href={`/blog/${slug}`}
-                          className="group-hover:text-primary-600 dark:group-hover:text-primary-400"
+                          className="font-bold underline underline-offset-4 decoration-primary-500/75 group-hover:decoration-primary-500"
                           aria-label={`Read "${title}"`}
                         >
                           Continue reading &rarr;

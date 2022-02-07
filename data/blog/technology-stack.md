@@ -2,7 +2,7 @@
 title: 'My tech stack of choice'
 date: '2021-01-24'
 tags: []
-summary: 'For my first technology post, I have decided to write about a book about philosophy. Hang in there with me. I am reading Zen and the Art of Motorcycle Maintenance by the great Robert M. Pirsig.'
+summary: 'For my first technology post, I have decided to write about a book about philosophy. Hang in there with me.'
 ---
 
 I am redesigning my personal site with the main goal of having a better surface area for reading. I will bump into plenty of hurdles but I’m looking forward to figuring things out 🚀
@@ -49,4 +49,5 @@ I was using Netlify on my previous site but as Next.js was created by the team b
 That’s all. I enjoyed writing this post.
 
 Thanks for reading,  
-[Manolo](https://twitter.com/recio_sjogren)
+Manolo  
+[@recio_sjogren](https://twitter.com/recio_sjogren)

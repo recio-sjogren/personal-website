@@ -2,11 +2,7 @@
 title: 'Tweaking my own defaults'
 date: '2021-01-12'
 tags: []
-summary: 'For my first technology post, I have decided to write about a book about philosophy. Hang in there with me. I am reading Zen and the Art of Motorcycle Maintenance by the great Robert M. Pirsig.'
----
-
-✨ Hi all, my name is Manolo Recio Sjögren and I am a designer and technologist based in Sunny London. I’ll be sharing stories about building products, technology and startups.✨
-
+summary: 'For my first technology post, I have decided to write about a book about philosophy. Hang in there with me.'
 ---
 
 ![Tweaking my own defaults](/static/images/tweaks.png)
@@ -38,7 +34,8 @@ In order of importance:
 This post was supposed to be my 200-250 word post 🤷‍♂️
 
 Thanks for reading,  
-[Manolo](https://twitter.com/recio_sjogren)
+Manolo  
+[@recio_sjogren](https://twitter.com/recio_sjogren)
 
 Ps. I have gone old-school to track progress. Hoping to see lots of black dots at the end of each month 👇
 
