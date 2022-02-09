@@ -1,5 +1,5 @@
 ---
-title: 'On sexism and housework'
+title: 'Sexism and housework'
 date: '2021-05-17'
 tags: []
 summary: 'Some reflections on sexism, housework and gender equality after watching a film titled The Great Indian Kitchen.'

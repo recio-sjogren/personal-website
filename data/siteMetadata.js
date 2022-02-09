@@ -1,22 +1,21 @@
 const siteMetadata = {
   title: "Hi! I'm Manolo 👋",
-  author: 'Manolo Recio Sjogren',
-  headerTitle: 'Manolo Recio Sjogren',
+  author: 'Manolo Recio Sjögren',
+  headerTitle: 'Manolo Recio Sjögren',
   description: '',
-  language: 'en-us',
+  language: 'en-uk',
   theme: 'system', // system, dark or light
   siteUrl: 'https://recio-sjogren.com',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteRepo: 'https://github.com/recio-sjogren/personal-website',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/profile-sm.jpg',
   socialBanner: '/static/images/twitter-card.png',
   email: 'recio.sjogren@gmail.com',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
+  github: 'https://github.com/recio-sjogren',
+  twitter: 'https://twitter.com/recio_sjogren',
   youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com',
-  locale: 'en-US',
+  locale: 'en-UK',
   analytics: {
     // supports plausible, simpleAnalytics or googleAnalytics
     plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app

@@ -6,13 +6,13 @@ export default function Footer() {
   return (
     <footer>
       <div className="flex flex-col items-center mt-16 mb-8">
-        <div className="flex mb-2 space-x-1 text-sm text-gray-500 dark:text-gray-400">
-          {/* <div>{`© ${siteMetadata.author}`}</div>
-          <div>{`${new Date().getFullYear()}.`}</div> */}
-          <div>
+        <div className="flex font-medium mb-2 space-x-1 text-sm text-slate-500 dark:text-slate-400">
+          <div>{`© ${new Date().getFullYear()} ${siteMetadata.author}.`}</div>
+          {/* <div>{`${new Date().getFullYear()}.`}</div> */}
+          {/* <div>
             Made with <a href="https://nextjs.org/">Next.JS</a>, deployed on{' '}
             <a href="https://vercel.com/">Vercel</a>.
-          </div>
+          </div> */}
           {/* <div>{` • `}</div>
           <Link href="/">{siteMetadata.title}</Link> */}
         </div>
