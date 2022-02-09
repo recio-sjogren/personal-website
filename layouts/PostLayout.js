@@ -46,12 +46,9 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               </dl>
             </div>
           </header>
-          <div
-            className="pb-8 divide-y divide-slate-200 xl:divide-y-0 dark:divide-slate-700"
-            style={{ gridTemplateRows: 'auto 1fr' }}
-          >
-            <div className="divide-y divide-slate-200 dark:divide-slate-700 xl:pb-0">
-              <div className="pt-10 pb-8 prose prose-h2:text-3xl prose-h3:text-xl prose-img:rounded-xl dark:prose-dark max-w-none">
+          <div className="pb-8" style={{ gridTemplateRows: 'auto 1fr' }}>
+            <div className="xl:pb-0">
+              <div className="pt-6 pb-8 prose prose-p:leading-relaxed prose-h2:text-3xl prose-h3:text-xl prose-img:rounded-xl dark:prose-dark max-w-none">
                 {children}
               </div>
             </div>
