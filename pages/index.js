@@ -55,7 +55,9 @@ export default function Home({ posts }) {
           </p>
         </div>
 
-        <h2 className="text-slate-900 text-3xl font-extrabold py-2">Featured Posts</h2>
+        <h2 className="dark:text-slate-100 text-slate-900 text-3xl font-extrabold py-2">
+          Featured Posts
+        </h2>
         <ul className="">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
@@ -103,10 +105,10 @@ export default function Home({ posts }) {
         </ul>
       </div>
       {posts.length > MAX_DISPLAY && (
-        <div className="flex justify-start text-base font-medium leading-6">
+        <div className="flex justify-start py-6 text-base font-medium leading-6">
           <Link
             href="/blog"
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+            className="font-bold underline underline-offset-4 decoration-primary-500/75 group-hover:decoration-primary-500"
             aria-label="all posts"
           >
             Read all Posts &rarr;
