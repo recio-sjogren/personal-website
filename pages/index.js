@@ -23,19 +23,18 @@ export default function Home({ posts }) {
 
         <div className="grid grid-cols-4 py-14">
           <div className="space-y-4 col-span-3">
-            <h1 className="text-5xl font-bold text-slate-900 dark:text-slate-100 sm:leading-10">
-              Hi,{' '}
-              <a
-                href="https://twitter.com/recio_sjogren"
-                className="underline font-extrabold underline-offset-4 decoration-primary-400/75 hover:decoration-primary-400 decoration-2"
-              >
-                I'm Manolo
-              </a>{' '}
-              👋
+            <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 sm:leading-10">
+              Hey friends 👋
             </h1>
             <p className="hidden sm:block text-xl text-slate-700 dark:text-slate-300">
-              I am a maker and an independent product design consultant writing about how to bring
-              successful products to market.
+              I'm{' '}
+              <a
+                href="https://twitter.com/recio_sjogren"
+                className="font-semibold underline underline-offset-2 decoration-primary-400"
+              >
+                Manolo.
+              </a>{' '}
+              A designer and technologist writing about how to bring successful products to market.
             </p>
           </div>
           <div className="flex flex-col items-end">
@@ -50,8 +49,7 @@ export default function Home({ posts }) {
         </div>
         <div>
           <p className="sm:hidden text-lg dark:text-slate-200 text-slate-700">
-            I am a maker and an independent product design consultant writing about how to bring
-            successful products to market.
+            A designer and technologist writing about how to bring successful products to market.
           </p>
         </div>
 
@@ -65,7 +63,7 @@ export default function Home({ posts }) {
             return (
               <li
                 key={slug}
-                className="bg-slate-50 group hover:bg-white dark:bg-black/25 dark:hover:bg-black/50 transition duration-150 my-5 rounded-xl"
+                className="bg-slate-100 group hover:bg-slate-200/50 dark:bg-black/25 dark:hover:bg-black/50 transition duration-150 my-5 rounded-xl"
               >
                 <Link
                   href={`/blog/${slug}`}
@@ -90,7 +88,7 @@ export default function Home({ posts }) {
                       <div className="">
                         <Link
                           href={`/blog/${slug}`}
-                          className="font-bold underline underline-offset-4 decoration-primary-500/75 group-hover:decoration-primary-500"
+                          className="font-semibold underline underline-offset-4 decoration-primary-400"
                           aria-label={`Read "${title}"`}
                         >
                           Continue reading &rarr;
@@ -105,10 +103,10 @@ export default function Home({ posts }) {
         </ul>
       </div>
       {posts.length > MAX_DISPLAY && (
-        <div className="flex justify-start py-6 text-base font-medium leading-6">
+        <div className="flex justify-start text-base leading-6">
           <Link
             href="/blog"
-            className="font-bold underline underline-offset-4 decoration-primary-500/75 group-hover:decoration-primary-500"
+            className="py-5 font-semibold underline underline-offset-4 decoration-primary-400"
             aria-label="all posts"
           >
             Read all Posts &rarr;

@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        '9/16': '56.25%',
+        // '9/16': '56.25%',
       },
       // lineHeight: {
       //   11: '2.75rem',
@@ -26,11 +26,14 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.slate.900'),
+            color: theme('colors.slate.600'),
             a: {
-              color: theme('colors.primary.900'),
+              fontWeight: '600',
+              textDecorationColor: theme('colors.primary.400'),
+              textUnderlineOffset: '4px',
+              color: theme('colors.slate.800'),
               '&:hover': {
-                color: theme('colors.primary.900'),
+                textDecorationColor: theme('colors.slate.800'),
               },
               code: { color: theme('colors.primary.400') },
             },
@@ -42,14 +45,14 @@ module.exports = {
             h2: {
               fontWeight: '900',
               letterSpacing: theme('letterSpacing.tight'),
-              color: theme('colors.slate.900'),
+              color: theme('colors.slate.800'),
             },
             h3: {
               fontWeight: '600',
-              color: theme('colors.slate.900'),
+              color: theme('colors.slate.800'),
             },
             'h4,h5,h6': {
-              color: theme('colors.slate.900'),
+              color: theme('colors.slate.800'),
             },
             pre: {
               backgroundColor: theme('colors.slate.800'),
@@ -86,7 +89,7 @@ module.exports = {
               backgroundColor: theme('colors.slate.900'),
             },
             strong: {
-              color: theme('colors.slate.900'),
+              color: theme('colors.slate.800'),
               fontWeight: '600',
             },
             blockquote: {

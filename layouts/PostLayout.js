@@ -38,7 +38,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               {/* time */}
               <dl>
                 <dt className="sr-only">Published by</dt>
-                <dd className="text-base font-bold leading-6 text-slate-500 dark:text-slate-600">
+                <dd className="text-base font-medium dark:font-semibold leading-6 dark:text-slate-400 text-slate-600 ">
                   <time dateTime={date}>
                     {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                   </time>
@@ -46,16 +46,13 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               </dl>
             </div>
           </header>
-          <div
-            className="pb-8 divide-y divide-slate-200 xl:divide-y-0 dark:divide-slate-700"
-            style={{ gridTemplateRows: 'auto 1fr' }}
-          >
-            <div className="divide-y divide-slate-200 dark:divide-slate-700 xl:pb-0">
-              <div className="pt-10 pb-8 prose prose-h2:text-3xl prose-h3:text-xl prose-img:rounded-xl dark:prose-dark max-w-none">
+          <div className="pb-8" style={{ gridTemplateRows: 'auto 1fr' }}>
+            <div className="xl:pb-0">
+              <div className="pt-6 pb-8 prose prose-p:leading-relaxed prose-h2:text-3xl prose-h3:text-xl prose-img:rounded-xl dark:prose-dark max-w-none">
                 {children}
               </div>
             </div>
-            <SignUpForm />
+
             <footer>
               {/* <div className="text-sm font-medium leading-5 divide-slate-200 xl:divide-y dark:divide-slate-700 xl:col-start-1 xl:row-start-2">
                 {(next || prev) && (
@@ -83,15 +80,16 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   </div>
                 )}
               </div> */}
-              <div className="pt-4 xl:pt-8">
+              <div className="py-4">
                 <Link
                   href="/blog"
-                  className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                  className="font-semibold underline underline-offset-4 decoration-primary-400"
                 >
                   &larr; Back to the blog
                 </Link>
               </div>
             </footer>
+            <SignUpForm />
           </div>
         </div>
       </article>
