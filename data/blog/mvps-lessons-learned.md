@@ -24,13 +24,9 @@ Having built several MVPs with varying degrees of success over the years, below 
 
 ## 👂 First, talk to your users
 
-Let’s pretend that you have identified a problem that some users experience and would like to adress it with software.
+Let’s pretend that you have identified a problem that some users experience and would like to adress it with software. This initial stage will fill you with enthusiasm as you'll be able to generate a vision and would be eager to start working on it.
 
-This initial stage will fill you with enthusiasm as you'll be able to generate a vision and would be eager to start working on it.
-
-**Before you start building the product, it is helpful if you talk to your users.** Literally. Go and talk to them.
-
-Engage with them. Actually, get to know them and offer your help with anything. No product at this stage. Just be all ears.
+**Before you start building the product, it is helpful if you talk to your users.** Literally. Go and talk to them. Engage with them. Actually, get to know them and offer your help with anything. No product at this stage. Just be all ears.
 
 ## Appeal to a small set of users
 
