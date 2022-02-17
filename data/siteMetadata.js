@@ -2,7 +2,8 @@ const siteMetadata = {
   title: "Hi! I'm Manolo 👋",
   author: 'Manolo Recio Sjögren',
   headerTitle: 'Manolo Recio Sjögren',
-  description: '',
+  description:
+    'A designer and technologist writing about how to bring successful products to market.',
   language: 'en-uk',
   theme: 'system', // system, dark or light
   siteUrl: 'https://recio-sjogren.com',

@@ -49,12 +49,13 @@ export default function Home({ posts }) {
         </div>
         <div>
           <p className="sm:hidden text-lg dark:text-slate-200 text-slate-700">
-            I am a maker and an independent product design consultant writing about how to bring
-            successful products to market.
+            A designer and technologist writing about how to bring successful products to market.
           </p>
         </div>
 
-        <h2 className="text-slate-900 text-3xl font-extrabold py-2">Featured Posts</h2>
+        <h2 className="dark:text-slate-100 text-slate-900 text-3xl font-extrabold py-2">
+          Featured Posts
+        </h2>
         <ul className="">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
