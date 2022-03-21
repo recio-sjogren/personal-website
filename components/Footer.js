@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="flex flex-col items-center mt-16 mb-8">
-        <div className="flex font-medium mb-2 space-x-1 text-sm text-slate-500 dark:text-slate-400">
+        <div className="flex mb-2 space-x-1 text-base text-slate-600 dark:text-slate-400">
           <div>{`© ${new Date().getFullYear()} ${siteMetadata.author}.`}</div>
           {/* <div>{`${new Date().getFullYear()}.`}</div> */}
           {/* <div>

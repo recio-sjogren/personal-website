@@ -21,18 +21,18 @@ export default function Home({ posts }) {
       <div className="  ">
         {/* HEADER */}
 
-        <div className="grid grid-cols-4 py-14">
+        <div className="grid grid-cols-4 pb-4 sm:py-14">
           <div className="space-y-4 col-span-3">
-            <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 sm:leading-10">
+            <h1 className="text-6xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 sm:leading-10">
               Hey friends 👋
             </h1>
-            <p className="hidden sm:block text-xl text-slate-700 dark:text-slate-300">
+            <p className="hidden pt-4 sm:block text-xl text-slate-800 dark:text-slate-300">
               I'm{' '}
               <a
                 href="https://twitter.com/recio_sjogren"
                 className="font-semibold underline underline-offset-2 decoration-primary-400"
               >
-                Manolo.
+                Manolo Recio Sjögren.
               </a>{' '}
               A designer and technologist writing about how to bring successful products to market.
             </p>
@@ -48,12 +48,19 @@ export default function Home({ posts }) {
           </div>
         </div>
         <div>
-          <p className="sm:hidden text-lg dark:text-slate-200 text-slate-700">
+          <p className="sm:hidden text-lg pb-6 dark:text-slate-200 text-slate-700">
+            I'm{' '}
+            <a
+              href="https://twitter.com/recio_sjogren"
+              className="font-semibold underline underline-offset-2 decoration-primary-400"
+            >
+              Manolo Recio Sjögren.
+            </a>{' '}
             A designer and technologist writing about how to bring successful products to market.
           </p>
         </div>
 
-        <h2 className="dark:text-slate-100 text-slate-900 text-3xl font-extrabold py-2">
+        <h2 className="dark:text-slate-100 text-slate-900 text-2xl sm:text-3xl font-extrabold py-2">
           Featured Posts
         </h2>
         <ul className="">
@@ -63,7 +70,7 @@ export default function Home({ posts }) {
             return (
               <li
                 key={slug}
-                className="bg-slate-100 group hover:bg-slate-200/50 dark:bg-black/25 dark:hover:bg-black/50 transition duration-150 my-5 rounded-xl"
+                className="bg-slate-200/75 group hover:bg-slate-300/50 dark:bg-black/25 dark:hover:bg-black/50 transition duration-150 my-5 rounded-xl"
               >
                 <Link
                   href={`/blog/${slug}`}
@@ -71,20 +78,19 @@ export default function Home({ posts }) {
                 >
                   <article>
                     <div className="space-y-2">
-                      <div className="">
-                        {/* Title */}
-                        <h2 className="text-xl font-extrabold">{title}</h2>
-                        {/* Published on */}
-                        <dl>
-                          <dt className="sr-only">Published on</dt>
-                          <dd className="mb-3 text-sm dark:text-slate-500 text-slate-700">
-                            <time dateTime={date}>{formatDate(date)}</time>
-                          </dd>
-                        </dl>
-                        <div className="mb-3 dark:text-slate-300 text-slate-700 max-w-none">
-                          {summary}
-                        </div>
+                      {/* Title */}
+                      <h2 className="text-xl sm:text-2xl font-extrabold">{title}</h2>
+                      {/* Published on */}
+                      <dl>
+                        <dt className="sr-only">Published on</dt>
+                        <dd className="mb-3 text-base dark:text-slate-500 text-slate-700">
+                          <time dateTime={date}>{formatDate(date)}</time>
+                        </dd>
+                      </dl>
+                      <div className="mb-3 dark:text-slate-300 text-slate-700 max-w-none">
+                        {summary}
                       </div>
+
                       <div className="">
                         <Link
                           href={`/blog/${slug}`}

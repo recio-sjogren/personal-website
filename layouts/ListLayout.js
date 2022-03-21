@@ -53,23 +53,34 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           return (
             <li
               key={slug}
-              className="bg-slate-50 hover:bg-white dark:bg-black/25 dark:hover:bg-black/50 transition duration-150 my-5 rounded-xl"
+              className="bg-slate-200/75 group hover:bg-slate-300/50 dark:bg-black/25 dark:hover:bg-black/50 transition duration-150 my-5 rounded-xl"
             >
               <Link
                 href={`/blog/${slug}`}
-                className="text-gray-900 block py-7 px-6 dark:text-gray-100"
+                className="text-slate-900 block py-7 px-6 dark:text-slate-100"
               >
                 <article>
                   <div className="space-y-2">
-                    <h3 className="text-xl font-bold">{title}</h3>
+                    <h3 className="text-xl sm:text-2xl font-extrabold">{title}</h3>
                     <dl>
                       <dt className="sr-only">Published on</dt>
-                      <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                      <dd className="mb-3 text-base dark:text-slate-500 text-slate-700">
                         <time dateTime={date}>{formatDate(date)}</time>
                       </dd>
                     </dl>
                   </div>
-                  <div className="prose text-gray-500 max-w-none dark:text-gray-400">{summary}</div>
+                  <div className="mb-3 dark:text-slate-300 text-slate-700 max-w-none">
+                    {summary}
+                  </div>
+                  <div className="">
+                    <Link
+                      href={`/blog/${slug}`}
+                      className="font-semibold underline underline-offset-4 decoration-primary-400"
+                      aria-label={`Read "${title}"`}
+                    >
+                      Continue reading &rarr;
+                    </Link>
+                  </div>
                 </article>
               </Link>
             </li>

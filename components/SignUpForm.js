@@ -10,10 +10,11 @@ export default function SignUpForm() {
       >
         <div className="bg-slate-200/75 dark:bg-yellow-900/10 rounded-lg p-8 space-y-4 border-4 border-slate-600">
           <div className="text-xl font-extrabold text-slate-800 dark:text-slate-100">
-            Subscribe to improve your product skills!
+            Receive my weekly posts by email!
           </div>
           <p className="text-base text-slate-600 dark:text-slate-300">
-            Each week I break down a thought provoking piece on how to build successful products.
+            Each week I break down a thought-provoking piece on how to build successful SaaS
+            products.
           </p>
           <label className="sr-only" htmlFor="member_email">
             Email address
